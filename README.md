@@ -9,6 +9,14 @@ $ (nix) mkdir build && cd build
 
 ## Build
 
+With Nix:
+
+```bash
+nix build
+```
+
+### Non-Nix
+
 In `build/`
 
 ```bash
@@ -21,8 +29,10 @@ Executable is available at `build/out/bin/test-openslide`
 ## Check memory usage
 
 ```bash
-$ (nix) valgrind --tool=massif --time-unit=B build/out/bin/test-openslide path/to/svs/file
-$ (nix) ms_print massif.out.12345 | less # file produced by valgrind
+$ valgrind --tool=massif --time-unit=B build/out/bin/test-openslide path/to/svs/file
+$ ms_print massif.out.12345 | less # file produced by valgrind
 ```
 
 See https://valgrind.org/docs/manual/ms-manual.html
+
+Valgrind is provided in the Nix development environment.
