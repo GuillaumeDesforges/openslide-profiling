@@ -1,0 +1,7 @@
+{
+    "nixEnvSelector.nixFile": "${workspaceRoot}/shell.nix",
+    "files.associations": {
+        "openslide.h": "c",
+        "glib.h": "c"
+    },
+}

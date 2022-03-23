@@ -1,0 +1,4 @@
+build/
+massif.out*
+result
+outputs/
